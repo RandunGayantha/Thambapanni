@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    background: url('img/bg1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-top: 20%;
+    color: #ffffff;
+    -webkit-text-stroke: 2px black;
+    
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+.explore, .journal {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.explore h2, .journal h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.explore p, .journal p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-container, .post-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card, .post {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.card img, .post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3, .post h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p, .post p {
+    color: #bbb;
+    margin: 0 10px 10px;
+}

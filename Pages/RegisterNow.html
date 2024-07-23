@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/b7e09e36f5.js" crossorigin="anonymous"></script>
+    <title>Register Now</title>
+    <style>
+        body {
+            background: url("images/a.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: rgb(2, 0, 0);
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        .registration-form {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(23, 13, 13, 0.1);
+        }
+        .registration-form h2 {
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .registration-form input, .registration-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+        }
+        .registration-form button {
+            background: #007BFF;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar-white">
+        <a href="index.html">
+        <img src="images/logo.png" class="logo">
+        </a>
+        <ul class="navLink">
+            <li><a href="#" class="active">Travel Places</a></li>
+            <li><a href="listing.html">Hotels</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+    <header>
+        <h1>Unlock the gateway to unforgettable adventures <br> Register Now and start your journey!</h1>
+    </header>
+    <main>
+        <section class="registration-form">
+            <h2><center>Register Now</center></h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="pw" placeholder="Password" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <textarea placeholder="Preferred Destinations"></textarea>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
