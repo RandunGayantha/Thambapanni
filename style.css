@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/background.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+ .logo{
+    width: 100px;
+    cursor: pointer;
+ }
+
+ .navLink li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+ }
+
+ .navLink li a{
+    text-decoration: none;
+    color: white;
+ }
+
+ .registerBtn{
+    background: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+ }
+
+ .container{
+    padding: 4vw;
+ }
+
+ .header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 22%;
+ }
+
+ .searchBar{
+   background: white;
+   width: 70%;
+   margin: 30px auto;
+   padding: 6px 10px 6px 30px;
+   border-radius: 50px;
+ }
+
+ .searchBar form{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+
+ .searchBar form input{
+   display: block;
+   border: 0;
+   outline: none;
+   background: transparent;
+ }
+
+ .searchBar form button{
+   background: #ff5361;
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+ }
+
+ .locationInput{
+   flex: 1;
+ }
+
+ .searchBar form label{
+   font-weight: 600;
+ }
+
+ .subtittle{
+   margin: 50px 30px 20px;
+   font-size: 2.2vw;
+   font-weight: 500;
+   color: #333;
+ }
+
+
+ .footer-image{
+   
+   background-size: cover;
+   padding: 0px;
+   width: 100%;
+   margin: 0px;
+   display: inline-block;
+   margin-top: 50px;
+   opacity: 30%;
+   
+ }
+
+ .foooter-image-div{
+   margin-bottom: 0px;
+ }
+
+ .footer{
+   background-color: #162b32;
+   margin:0px;
+   padding: 10px;
+   
+   
+ }
+
+ .footer p{
+   text-align: center;
+   color: white;
+ }
+
+
+
+
+/*----------Trending places ---------------*/
+
+.trending{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 30px;
+   margin-bottom: 30px;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+.trending div img{
+   width: 100%;
+   border-radius: 10px;
+}
+
+.trending h3{
+   font-weight: 600;
+   margin-top: 10px;
+   text-decoration: none;
+
+}
+
+.active{
+   position: relative;
+}
+
+.active ::after{
+   content: " ";
+   background: white;
+   width: 25px;
+   height: 2px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -12px;
+   border-radius: 2px;
+
+}
+
+nav .fa-bars{
+   display: none;
+}
+
+.hotel-name{
+   text-decoration: none;
+   color: black;
+}
+
+/*-------listing page------*/
+
+.navbar-white{
+   background: white;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-white .navLink li a{
+   color: black;
+}
+
+.navbar-white .registerBtn{
+   background: #ff5361;
+   color: white;
+}
+
+.listContainer{
+   margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.left-col{
+   flex-basis: 70%;
+}
+
+.right-col{
+   flex-basis: 25%;
+}
+
+.left-col h1{
+   color: #333;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+.house{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 30px 0;
+   border-top: 1px solid #ccc;
+}
+
+.house-image{
+   flex-basis: 40%;
+}
+
+.house-info{
+   flex-basis: 58%;
+   color: #555;
+}
+
+.house-image img{
+   width: 100%;
+   border-radius: 12px;
+}
+
+.house-info h3 {
+   font-weight: 600;
+   color: #333;
+   font-size: 22px;
+   margin: 4px 0;
+}
+
+.house-info i{
+   color: #ff5361;
+   font-size: 18px;
+   margin: 10px 1px;
+}
+
+.house-price{
+   text-align: right;
+}
+
+.house-price h4{
+   font-size: 20px;
+}
+
+.house-price h4 span{
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.hotel-click{
+   text-decoration: none;
+}
+/*----------hoteles and places ---------------*/
+
+.house-details{
+   padding: 0 12%;
+}
+
+.house-tittle{
+   margin-top: 50px;
+}
+
+.house-tittle h1{
+   font-weight: 600;
+}
+
+.house-tittle .row{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   margin: 10px 0;
+}
+
+.house-tittle span{
+   margin: 0 20px;
+}
+
+.house-tittle i{
+   color: #ff5361;
+   font-size: 14px;
+}
+
+.gallery{
+   display: grid;
+   grid-gap: 10px;
+   grid-template-areas: 'first first . .' 'first first . .';
+   margin: 20px 0;
+}
+.gallery div img{
+   width: 100%;
+   display: block;
+   border-radius: 10px;
+}
+
+.gallery-img1{
+   grid-area: first;
+}
+
+.small-detail h2{
+   font-weight: 500;
+}
+
+.small-detail h4{
+   text-align: right;
+   font-size: 22px;
+}
+
+.line{
+   border: 0;
+   height: 1px;
+   background: #ccc;
+   width: 100%;
+   max-width: 800px;
+   margin: 20px 0 50px;
+}
+
+.hotel-des{
+   max-width: 700px;
+   margin-bottom: 50px;
+   text-align: justify;
+}
+
+
+.map iframe{
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+.map h3{
+   font-size: 26px;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
+
+.near-hotel{
+   font-size: 26px;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
+
+.nearby-hotel{
+   font-size: 26px;
+   font-weight: 500;
+   margin-bottom: 30px; 
+}
+
+.booknow{
+   
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    background: #ff5361;
+    color: white;
+    float: right;
+    margin-top: 10px;
+}
+
+/*-------Register Page------*/
+
+.hero{
+   height: 100%;
+   width: 100%;
+}
+
+/*-------For Mobile Devices------*/
+
+@media only screen and (max-width: 1200px) {
+   
+   .logo{
+      position: fixed;
+      top: 4%;
+      left: 7%;
+
+   }
+
+   nav{
+      position: fixed;
+      top:0;
+      z-index: 100;
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 0;
+      background: black;
+      text-align: right;
+   }
+
+   nav .navLink li{
+      margin: 10px;
+      display: block;
+   }
+
+   .registerBtn{
+      margin: 15px 0 30px;
+      display: none;
+
+   }
+
+   nav .fa-bars{
+      display: block;
+      position: fixed;
+      top: 50px;
+      right: 150px;
+      color: white;
+      font-size: 20px;
+   }
+
+   .header h1 {
+      padding-top: 200px;
+      font-size: 7vw;
+   }
+
+   .searchBar{
+      width: 90%;
+      margin: 30px auto;
+      padding: 20px 10px 30px;
+      border-radius: 5px;
+      position: relative;
+   }
+
+   .searchBar form{
+      display: block;
+   }
+
+   .searchBar form input{
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+   }
+
+   .searchBar form button{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+
+   }
+
+
+}
+
+
+
+
+
+
+
