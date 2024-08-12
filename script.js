@@ -1,22 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-    const errorMessage = document.getElementById("error-message");
+document.getElementById('registrationForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
 
-    form.addEventListener("submit", function (event) {
-        const name = form.querySelector('input[placeholder="Name"]').value.trim();
-        const email = form.querySelector('input[placeholder="Email"]').value.trim();
-        const phone = form.querySelector('input[placeholder="Phone Number"]').value.trim();
-        const password = form.querySelector('input[placeholder="Password"]').value;
-        const retypePassword = form.querySelector('input[placeholder="Retype Password"]').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
 
-        if (!name || !email || !phone || !password || !retypePassword) {
-            errorMessage.textContent = "All fields are required.";
-            event.preventDefault();
-        } else if (password !== retypePassword) {
-            errorMessage.textContent = "Passwords do not match.";
-            event.preventDefault();
-        } else {
-            errorMessage.textContent = "";
-        }
-    });
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+    } else {
+        alert("Registration successful!");
+        // Optionally, you can submit the form here if everything is valid
+        // e.target.submit(); // Uncomment this line if you want to submit the form
+    }
 });
