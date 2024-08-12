@@ -82,27 +82,7 @@
                 <input type="confirm password" placeholder="Confirm Password" required>
                 <button type="submit">Sign Up</button>
             </form>
-            <script>
-        // Add an event listener to the form's submit event
-        document.getElementById('registerForm').addEventListener('submit', function(event) {
-            // Get the values of the password and confirm password fields
-            var password = document.querySelector('input[name="password"]').value;
-            var confirmPassword = document.querySelector('input[name="confirm_password"]').value;
-            // Get the error message element
-            var errorMessage = document.getElementById('error-message');
-
-            // Check if passwords match
-            if (password !== confirmPassword) {
-                // If passwords do not match, display the error message
-                errorMessage.style.display = 'block';
-                // Prevent the form from being submitted
-                event.preventDefault();
-            } else {
-                // If passwords match, hide the error message and allow form submission
-                errorMessage.style.display = 'none';
-            }
-        });
-    </script>
+           
         </section>
     </main>
 </body>
