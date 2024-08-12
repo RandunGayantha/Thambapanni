@@ -82,6 +82,23 @@
                 <input type="confirm password" placeholder="Confirm Password" required>
                 <button type="submit">Sign Up</button>
             </form>
+
+            <script>
+        const form = document.getElementById('registerForm');
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirmPassword');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', function(event) {
+            // Prevent form submission if passwords do not match
+            if (password.value !== confirmPassword.value) {
+                event.preventDefault();
+                errorMessage.style.display = 'block'; // Show the error message
+            } else {
+                errorMessage.style.display = 'none'; // Hide the error message
+            }
+        });
+    </script>
            
         </section>
     </main>
