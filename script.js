@@ -1,23 +1,26 @@
-document.getElementById('registration-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-   
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const password = document.getElementById('password').value.trim();
-    const retypePassword = document.getElementById('retype-password').value.trim();
-    const errorMessage = document.getElementById('error-message');
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function(event) {
+        const name = form.querySelector("input[type='text']").value.trim();
+        const email = form.querySelector("input[type='email']").value.trim();
+        const phone = form.querySelector("input[type='tel']").value.trim();
+        const password = form.querySelector("input[placeholder='Password']").value.trim();
+        const retypePassword = form.querySelector("input[placeholder='Retype Password']").value.trim();
+        const errorMessage = document.getElementById("error-message");
 
-    if (!name || !email || !phone || !password || !retypePassword) {
-        errorMessage.textContent = 'All fields are required.';
-        return;
-    }
+        errorMessage.textContent = "";
 
-    if (password !== retypePassword) {
-        errorMessage.textContent = 'Passwords do not match.';
-        return;
-    }
+        if (name === "" || email === "" || phone === "" || password === "" || retypePassword === "") {
+            errorMessage.textContent = "All fields are required.";
+            alert("Please fill out all fields.");
+            event.preventDefault();
+            return;
+        }
 
-    errorMessage.textContent = '';
-    alert('Form submitted successfully!');
+        if (password !== retypePassword) {
+            errorMessage.textContent = "Passwords do not match.";
+            alert("Passwords do not match.");
+            event.preventDefault();
+        }
+    });
 });
