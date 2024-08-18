@@ -366,9 +366,10 @@ nav .fa-bars{
    margin-bottom: 30px; 
 }
 
-.booknow{
-   
-    padding: 8px 20px;
+
+
+.buynowBtn{
+   padding: 8px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
@@ -376,15 +377,6 @@ nav .fa-bars{
     color: white;
     float: right;
     margin-top: 10px;
-}
-
-.buynowBtn{
-   background:red;
-   color: white;
-   padding: 8px 20px;
-   border-radius: 20px;
-   text-decoration: none;
-   font-size: 14px;
     
 }
 
