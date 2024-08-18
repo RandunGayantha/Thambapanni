@@ -379,7 +379,7 @@ nav .fa-bars{
 }
 
 .buynowBtn{
-   background:rgb(6, 255, 6);
+   background:red;
    color: white;
    padding: 8px 20px;
    border-radius: 20px;
