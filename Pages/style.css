@@ -378,6 +378,16 @@ nav .fa-bars{
     margin-top: 10px;
 }
 
+.buynowBtn{
+   background:rgb(6, 255, 6);
+   color: white;
+   padding: 8px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+   font-size: 14px;
+    
+}
+
 /*-------Register Page------*/
 
 .hero{
