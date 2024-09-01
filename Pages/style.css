@@ -273,6 +273,11 @@ nav .fa-bars{
    text-decoration: none;
 }
 /*----------hoteles and places ---------------*/
+.discription
+{
+ text-align: justify;
+ font-weight: 600;
+}
 
 .house-details{
    padding: 0 12%;
